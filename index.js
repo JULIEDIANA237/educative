@@ -1,45 +1,58 @@
-// Chargement du header
-fetch("header.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("headerContainer").innerHTML = data;
-});
+var jumpLinks = document.querySelectorAll('.jump-link');
+var jumpHeading = document.getElementById('jump-heading');
+var jumpMessage = document.getElementById('jump-message');
+var jumpImg = document.getElementById('jump-img');
 
-// Chargement du banner
-fetch("banner.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("bannerContainer").innerHTML = data;
-});
+var currentIndex = 0;
+var intervalId;
 
-// Chargement des cours en vedette
-fetch("featured-courses.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("featuredCoursesContainer").innerHTML = data;
-});
+function showContent() {
+  var link = jumpLinks[currentIndex];
+  var message = link.dataset.message;
+  var image = link.dataset.image;
 
-// Chargement des témoignages
-fetch("testimonials.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("testimonialsContainer").innerHTML = data;
-});
+  jumpHeading.textContent = link.textContent;
+  jumpMessage.textContent = message;
+  jumpImg.src = image;
 
-// Chargement du footer
-fetch("footer.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("footerContainer").innerHTML = data;
-});
+  // Réinitialiser la couleur de tous les liens
+  jumpLinks.forEach(function(link) {
+    link.style.backgroundColor = '';
+    link.style.color = '';
+    link.style.boxShadow = '';
+  });
 
-window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('.navbar');
-  var scrolled = window.scrollY || document.documentElement.scrollTop;
+  // Appliquer la couleur rouge au lien actuel
+  link.style.backgroundColor = '#cacae9';
+  link.style.color = 'blue';
+  link.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.5)';
 
-  if (scrolled > 0) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  currentIndex++;
+  if (currentIndex >= jumpLinks.length) {
+    currentIndex = 0;
   }
+}
+
+function startInterval() {
+  showContent();
+  intervalId = setInterval(showContent, 5000); // 5000 milliseconds = 5 seconds
+}
+
+function stopInterval() {
+  clearInterval(intervalId);
+}
+
+jumpLinks.forEach(function(link) {
+  link.addEventListener('mouseover', stopInterval);
+  link.addEventListener('mouseout', startInterval);
+});
+
+startInterval();
+
+document.getElementById("login-link").addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "block";
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "none";
 });
