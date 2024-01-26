@@ -19,7 +19,7 @@
             <div class="menu">
                 <ul>
                     <li class="dropdown">
-                        <a href="explorer/explorer.html">explorer <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <a class="menu-items" href="explorer/explorer.html">explorer <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <div class="dropdown-catalog">
                                 <div class="catalog">
@@ -38,7 +38,7 @@
 
                             <div class="dropdown-items">
                                 <div class="language">
-                                    <li><a href="#">Python</a></li>
+                                    <li><a style="text-decoration: none;" href="#">Python</a></li>
                                     <li><a href="#">Java</a></li>
                                     <li><a href="#">Javascript</a></li>
                                     <li><a href="#">C</a></li>
@@ -96,9 +96,9 @@
                         </ul>
                     </li>
 
-                    <li><a href="pricing/pricing.html">pricing</a></li>
-                    <li><a href="enterprise/enterprise.html">enterprise</a></li>
-                    <li><a href="resources/resources.html">resources</a></li>
+                    <li><a class="menu-items" href="pricing/pricing.html">pricing</a></li>
+                    <li><a class="menu-items" href="enterprise/enterprise.html">enterprise</a></li>
+                    <li><a class="menu-items" href="resources/resources.html">resources</a></li>
                 </ul>
             </div>
     
@@ -112,21 +112,21 @@
                        
                         <div class="img-first">
                             <img src="image/femme.jpeg" alt="">
-
                         </div>
-                        
+
+                        <h1 style="font-size: 1.5rem; font-weight: 500; text-align: center;">Join for free today and receive:</h1>
                         <div class="text-first">
                             <div class="text-items">
-                                <p>Access to many of our popular Courses and Assessments</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Access to many of our <strong>popular Courses</strong> and <strong style="margin: 40px;">Assessments</strong> </p>
                             </div>
                             <div class="text-items">
-                                <p>Our weekly industry insider newsletter</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i>Our weekly <strong>industry insider newsletter</strong> </p>
                             </div>
                             <div class="text-items">
-                                <p>Exclusive tech career webinars with industry pros</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i>Exclusive <strong>tech career webinars</strong>  with industry pros</p>
                             </div>
                             <div class="text-items">
-                                <p>Cheat sheets and roadmaps for your full tech interview loop</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> <strong>Cheat sheets</strong>  and <strong>roadmaps</strong>  for your full <strong style="margin: 40px;">tech interview loop</strong> </p>
                             </div>
                         </div>
 
@@ -137,43 +137,133 @@
                             <img src="image/educative.png" alt="">
                             <span class="close">&times;</span>
                         </div>
-                        <h2>Welcome Back</h2>
+                        <h2 id="header-title">Welcome Back</h2>
 
                         <div class="second-icons">
+                           
                             <div class="second-items">
-                                <img src="image/googlog.png" alt="">
-                                <span>google</span>
+                                <a href="">
+                                    <img style="width: 25px; height: 25px;" src="image/googlog.png" alt="">
+                                    <span>google</span>
+                                </a>
                             </div>
 
                             <div class="second-items">
-                                <img src="image/git.png" alt="">
-                                <span>Github</span>
+                                <a href="">
+                                    <img style="width: 25px; height: 25px;" src="image/git.png" alt="">
+                                    <span>Github</span>
+                                </a>                                
                             </div>
 
                             <div class="second-items">
-                                <img src="image/linke.png" alt="">
-                                <span>Linkedin</span>
+                                <a href="">
+                                    <img style="width: 20px; height: 20px; padding-top: 5px;" src="image/linke.png" alt="">
+                                    <span>Linkedin</span>
+                                </a>
                             </div>
                         </div>
 
-                        <div class="second-login">
-                            <form>
-                                <label for="username">Username:</label>
-                                <input type="text" id="username" name="username" required>
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" required>
-                                <a href="">Forgot Password?</a>
-                                <button type="submit">Login</button>
-                                <p>Don't have an account? <a href="">Sign up</a> </p>
-                            </form>
+                        <div class="login-bar">
+                            <p style="margin-top: -20px;">or log in with email</p>
                         </div>
 
+                        <div class="login-form active">
+                            <h2 id="login-title"></h2>
+                            <div class="form-group">
+                              <label for="login-email">Email <em style="color: red;">*</em></label>
+                              <input type="email" id="login-email" name="login-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Password<em style="color: red;">*</em></label>
+                                <div class="password-input">
+                                  <input type="password" id="login-password" name="login-password" required>
+                                  <i  class="fa fa-eye toggle-password"></i>
+                                </div>
+                            </div>
+                            <div class="forgot"><a href="">Forgot Password?</a></div>
+                            
+                            <div class="form-group">
+                              <button type="submit">Log In</button>
+                            </div>
+                            <p>Don't have an account?<a class="account" href="#" id="signup-link-modal">Sign up</a></p>
+                            <div class="horizontal-bar"></div>
+                            <div id="login-enterprise">
+                                <a class="enterprise" href="#"><i class="fa fa-building" aria-hidden="true"></i>Login with Enterprise</a>
+                            </div>
+                              
+                              <div id="modal-enterprise" class="modal-enterprise">
+                                <div class="modal-content-enterprise">
+                                  <div class="modal-header-enterprise">
+                                    <h2>Enterprise Login</h2>
+                                    <span class="close">&times;</span>
+                                  </div>
+                                  <hr>
+                                  <div class="modal-body-enterprise">
+                                    <label for="work-email">Work Email</label>
+                                    <input type="email" id="work-email" name="work-email">
+                                    <button class="next-button">NEXT</button>
+                                    <a class="back-link" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back to Personal Login</a>
+                                  </div>
+                                </div>
+                             </div>
+    
+                            <div id="login-protected">
+                                <p>This site is protected by reCAPTCHA and the Google <a class="terms" href="">Privacy Policy</a>and<a class="terms" href="">Terms of Service </a> apply. </p>
+                            </div>
+                        </div>
+
+                        <div class="signup-form">
+                            <h2 id="signup-title">sign up</h2>
+                            <div class="form-group">
+                                <label for="signup-email">Full Name<em style="color: red;">*</em></label>
+                                <input type="text" id="signup-email" name="signup-email" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="signup-email">Email<em style="color: red;">*</em></label>
+                              <input type="email" id="signup-email" name="signup-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Password<em style="color: red;">*</em></label>
+                                <div class="password-input">
+                                  <input type="password" id="signup-password" name="login-password" required>
+                                  <i  class="fa fa-eye toggle-password"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <button style="margin-top: 20px;" type="submit">Sign Up</button>
+                            </div>
+                            <p>Already have an account?<a href="#" id="login-link-modal">Log in</a></p>
+                            <div class="horizontal-bar"></div>
+                            <div id="login-enterprise">
+                                <a class="enterprise" href="#"><i class="fa fa-building" aria-hidden="true"></i>Login with Enterprise</a>
+                              </div>
+                              
+                              <div id="modal" class="modal">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h2>Enterprise Login</h2>
+                                    <span class="close">&times;</span>
+                                  </div>
+                                  <hr>
+                                  <div class="modal-body">
+                                    <label for="work-email">Work Email</label>
+                                    <input type="email" id="work-email" name="work-email">
+                                    <button class="next-button">NEXT</button>
+                                    <a class="back-link" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back to Personal Login</a>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="login-protected">
+                                <p>By signing up, you agree to Educative's <a class="privacy" href="">Terms of Service </a>and<a class="privacy" href="">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                           
                       </div>
                       
                     </div>
                 </div>
 
-                <a class="join" href="register.html">Join For Free <i class="fas fa-arrow-right" aria-hidden="true"></i></a>  
+                <a class="join" id="join-link" href="#">Join For Free <i class="fas fa-arrow-right" aria-hidden="true"></i></a>  
             </div>
             
         </div>
