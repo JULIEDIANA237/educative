@@ -94,6 +94,7 @@
     display: none;
     position: absolute;
     background-color: white;
+    margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -843,6 +844,10 @@ form {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-enterprise.active{
+  display: block;
 }
 
 .modal-content-enterprise {

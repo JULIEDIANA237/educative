@@ -132,28 +132,25 @@ togglePassword.addEventListener('click', function() {
   }
 });
 
-const enterpriseLink = document.querySelector('.enterprise');
+const loginEnterpriseLink = document.querySelector('#login-enterprise a');
 const modalEnterprise = document.getElementById('modal-enterprise');
-const closeButtonEnterprise = modalEnterprise.querySelector('.close');
+const closeButton = modalEnterprise.querySelector('.close');
+const backLink = modalEnterprise.querySelector('.back-link');
+const modalLogin = document.getElementById('login-modal');
 
-const loginModal = document.getElementById('login-link');
-const closeButtonLogin = loginModal.querySelector('.close');
 
-enterpriseLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  modalEnterprise.style.display = 'block';
-  loginModal.style.display = 'none';
-});
+function showEnterpriseModal() {
+  modalEnterprise.classList.add('active');
+  modalLogin.classList.remove('active');
+}
 
-closeButtonEnterprise.addEventListener('click', function() {
-  modalEnterprise.style.display = 'none';
-});
 
-closeButtonLogin.addEventListener('click', function() {
-  loginModal.style.display = 'none';
-});
+function showLoginModal() {
+  modalEnterprise.classList.remove('active');
+  modalLogin.classList.add('active');
+}
 
-// Ajoutez cette ligne pour masquer la boîte modale de connexion lorsque la boîte modale de l'entreprise s'affiche
-modalEnterprise.addEventListener('click', function() {
-  loginModal.style.display = 'none';
-});
+loginEnterpriseLink.addEventListener('click', showEnterpriseModal);
+closeButton.addEventListener('click', showLoginModal);
+backLink.addEventListener('click', showLoginModal);
+
