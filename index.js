@@ -154,3 +154,16 @@ loginEnterpriseLink.addEventListener('click', showEnterpriseModal);
 closeButton.addEventListener('click', showLoginModal);
 backLink.addEventListener('click', showLoginModal);
 
+//survole de l'image
+
+const imageDivs = document.querySelectorAll('.img > div');
+
+imageDivs.forEach((div) => {
+  div.addEventListener('mouseover', () => {
+    div.classList.add('show-caption');
+  });
+
+  div.addEventListener('mouseout', () => {
+    div.classList.remove('show-caption');
+  });
+});
