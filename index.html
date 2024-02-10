@@ -13,20 +13,20 @@
 
         <div class="navbar">
             <div class="h1">
-                <img src="image/logo.png"  alt=""> <a href="index.html">educative</a>
+                <a  href="index.html"> <img src="image/educative.png" alt=""> </a>
             </div>
             
             <div class="menu">
                 <ul>
                     <li class="dropdown">
-                        <a class="menu-items" href="explorer/explorer.html">explorer <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <a class="menu-items" href="">explorer <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <div class="dropdown-catalog">
                                 <div class="catalog">
                                     <h1>EXPLORE THE CATALOG</h1>
                                     <p>Surcharge your career with 
                                        <br>  700+ hands-of courses</p>
-                                    <a class="view" href="">view all courses</a>
+                                    <a class="view" href="explorer/explorer.html">view all courses</a>
                                 </div>
                                <hr>
 
@@ -273,8 +273,7 @@
             <div class="title">
                 <h1 class="small">Learn in-demand tech skills, <br> 
                     <strong style="color: #333;">Without hours of passive video lessons</strong>
-                </h1>
-                
+                </h1>  
             </div>
     
             <div class="search-bar">
@@ -282,47 +281,43 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
     
-            <div class="or"><h3>or explore</h3></div>
-    
+            <div class="or"><h3>or explore</h3></div>  
+
             <div class="course">
-                <div class="menu">
-                    <a href="header.html">
-                        <span>
-                            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                            Courses 
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>
+                <button onclick="window.location.href = 'explorer/explorer.html'">
+                    <div class="course-courses">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 stroke-indigo-500 dark:stroke-indigo-300"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        <span class="ml-3 text-gray-L1000 dark:text-gray-D50 sm:ml-4">Courses</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-6 w-6 stroke-indigo-500 dark:stroke-indigo-300 sm:ml-6"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </button>
+                
+                <button onclick="window.location.href = 'explorer/explorer.html'">
+                    <div class="course-courses">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500 dark:text-indigo-300"><path d="M11.952 9.285a1.333 1.333 0 0 0-.681-.365l-1.592-.318a4 4 0 0 0-2.573.344l-.212.106a4 4 0 0 1-2.573.345l-1.288-.258c-.437-.087-.89.05-1.204.365m2.504-7.838h5.334L9 2.333V5.78c0 .354.14.693.39.943l3.334 3.333c.84.84.245 2.277-.943 2.277H2.219c-1.188 0-1.783-1.437-.943-2.277l3.333-3.333c.25-.25.39-.589.39-.943V2.333l-.666-.667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="ml-3 text-gray-L1000 dark:text-gray-D50 sm:ml-4">AWS CloudLabs</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-6 w-6 stroke-indigo-500 dark:stroke-indigo-300 sm:ml-6"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </button>
     
-                <div class="menu">
-                    <a href="header.html">
-                        <span>
-                            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                            AWS cloudlabs
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>
-    
-                <div class="menu">
-                    <a href="header.html">
-                        <span>
-                            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                            Real-world Projects
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>
+                <button onclick="window.location.href = 'explorer/explorer.html'">
+                    <div class="course-courses">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-indigo-500 dark:fill-indigo-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.0533 0C8.23178 0 6.89962 0.70496 6.10195 1.77452C5.60862 2.43599 5.34697 3.20198 5.28561 3.94842H3.08336C1.41475 3.94842 0.0259637 5.27933 0.0259637 6.95706V12.0217H1.02596C1.50895 12.0217 2.20596 12.1114 2.74347 12.3922C3.21781 12.64 3.53995 13.0049 3.53995 13.7073C3.53995 14.8258 3.09819 15.2861 2.66306 15.5331C2.13929 15.8304 1.47459 15.8907 1.02596 15.8907H0.0294409L0.0259698 16.8872C0.0208575 18.3549 0.0182714 19.3806 0.0169633 20.0395C0.0163093 20.3689 0.0159747 20.6067 0.0158036 20.7622L0.015625 20.9914C0.015625 22.6755 1.42136 24 3.08336 24H16.5237C18.1857 24 19.5914 22.6755 19.5914 20.9914V17.8856C20.0579 17.8408 20.5712 17.7187 21.0597 17.4766C21.5858 17.2157 22.098 16.8074 22.4737 16.1967C22.8493 15.586 23.0526 14.831 23.0526 13.9327C23.0526 12.1163 22.2604 10.9195 21.1705 10.3059C20.6693 10.0238 20.1171 9.87454 19.5914 9.84059V6.95706C19.5914 5.27289 18.1857 3.94842 16.5237 3.94842H14.274C14.2582 3.84011 14.2382 3.73275 14.2149 3.62731C14.0967 3.09395 13.874 2.52838 13.544 2.00625C12.8818 0.958344 11.7195 0 10.0533 0ZM7.31793 4.72902C7.1978 4.19481 7.30297 3.5095 7.70517 2.97021C8.08062 2.46678 8.78442 2 10.0533 2C10.8548 2 11.4507 2.43758 11.8534 3.07474C12.0559 3.39514 12.1923 3.74439 12.2622 4.05979C12.3356 4.39125 12.3197 4.61042 12.2977 4.69364L11.9671 5.94842H16.5237C17.1362 5.94842 17.5914 6.43173 17.5914 6.95706V12.5113L18.9966 11.8886C19.1598 11.8162 19.6933 11.7695 20.1894 12.0487C20.5914 12.275 21.0526 12.7689 21.0526 13.9327C21.0526 14.5245 20.9212 14.9033 20.7701 15.1489C20.6191 15.3944 20.4127 15.565 20.1714 15.6847C19.6433 15.9465 19.025 15.9248 18.8327 15.877L17.5914 15.5683V20.9914C17.5914 21.5167 17.1362 22 16.5237 22H3.08336C2.47086 22 2.01562 21.516 2.01562 20.9907L2.0158 20.7644C2.01597 20.6095 2.01631 20.3724 2.01696 20.0434C2.01797 19.5334 2.01975 18.8028 2.02288 17.8166C2.52427 17.7389 3.10397 17.5825 3.65031 17.2724C4.72301 16.6636 5.53995 15.5322 5.53995 13.7073C5.53995 12.1201 4.66986 11.1422 3.6696 10.6196C3.12826 10.3367 2.54592 10.1812 2.02596 10.1002V6.95706C2.02596 6.42529 2.47746 5.94842 3.08336 5.94842H7.59215L7.31793 4.72902ZM14.4448 12.9744L10.029 8.58582L8.61914 10.0044L11.6327 12.9994L8.69868 16.0208L10.1335 17.4141L14.4448 12.9744Z" fill="current"></path></svg>
+                        <span class="ml-3 text-gray-L1000 dark:text-gray-D50 sm:ml-4">Real-world Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-6 w-6 stroke-indigo-500 dark:stroke-indigo-300 sm:ml-6"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </button>
             </div>
     
             <div class="logo">
                 <p>Join <strong style="color: #333;">2.1 Million</strong>  developers working in companies like</p>
-                <img src="image/meta.png" alt="">
-                <img src="image/amazon.png" alt="">
-                <img src="image/apple.png" alt="">
-                <img src="image/netflix.png" alt="">
-                <img src="image/google.png" alt="">
+                <div class="logo-svg">
+                    <img style="width: 50px; height: 50px;" src="https://go.dev/images/logos/meta_light.svg" alt="">
+                    <img style="width: 50px; height: 50px;" src="https://www.vectorlogo.zone/logos/amazon/amazon-ar21.svg" alt="">
+                    <img style="width: 28px; height: 28px;" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="">
+                    <img style="width: 40px; height: 40px;" src="https://www.vectorlogo.zone/logos/netflix/netflix-ar21.svg" alt="">
+                    <img style="width: 40px; height: 40px;"  src="https://www.vectorlogo.zone/logos/google/google-ar21.svg" alt="">
+                </div>
             </div>
             <!--  -->
         </div>
@@ -353,16 +348,288 @@
             <p>Take the next step in your career. Get hands-on with the industry's most in-demand technologies.</p>
 
             <div class="img">
-                <div class="js"><img src="image/js.png" alt=""></div>
-                <div class="python"> <img src="image/python.png" alt=""></div>
-                <div class="kub"><img src="image/kubernetes.png" alt=""></div>
-                <div class="cplus"><img src="image/C++_logo.png" alt=""></div>   
-                <div class="graph"><img src="image/graphql.png" alt=""></div>
-                <div class="csharp"><img src="image/csharp.png" alt=""></div>
-                <div class="aws"><img src="image/aws.png" alt=""></div>
-                <div class="react"><img src="image/react.png" alt=""></div>
+                <div class="js">
+                    <a href=""><img style="width: 35px; height: 35px;" src="image/js.png" alt=""></a>
+                    <div class="image-caption">Javascript</div>
+                </div>
+                <div class="python">
+                    <a href=""><img src="image/" alt=""></a>
+                    <div class="image-caption">Python</div>   
+                </div>
+                <div class="kub">
+                    <a href=""><img src="" alt=""></a>
+                    <div class="image-caption">Kubernetes</div>
+                </div>
+                <div class="cplus">
+                    <a href=""><img src="" alt=""></a>
+                    <div style="text-align: center;" class="image-caption">C++</div>   
+                </div>   
+                <div class="csharp">
+                    <a href=""><img style="width: 30px; height: 30px;" src="" alt=""></a> 
+                    <div class="image-caption">C#</div>
+                </div>
+                <div class="aws">
+                    <a href=""><img src="" alt=""></a>
+                    <div class="image-caption">Aws</div>
+                </div>
+                <div class="react">
+                    <a href=""><img style="border-radius: 50%;" src="" alt=""></a>
+                    <div class="image-caption">React</div>
+                </div>
             </div>
         </div>
+
+        <div class="relative">
+            <div class="relative-content">
+                <div class="assisted">
+                    <div class="featuring">
+                        <div class="circle"></div>
+                        <span>NOW FEATURING</span>
+                    </div>
+                    <p class="heading">AI-Assisted Feedback</p>
+                    <p class="heading-text">Identify and fill knowledge gaps in real-time with adaptive feedback. Get personalized insights, debug errors, and optimize output.</p>
+                    <div class="feadback">
+                        <div class="feadback-items">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span>Leverage generative AI for code feedback</span>
+                        </div>
+                        <div class="feadback-items">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <span>Faster learning loop with one-click evaluations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: -80px;" class="image-assisted">
+                    <img src="image/aiAssistedFeedback.png" alt="">
+                </div>
+            </div>
+
+            <div class="relative-content">
+
+                <div style="margin-top: -80px;" class="image-assisted">
+                    <img src="image/fasterLearningSection.png" alt="">
+                </div>
+
+                <div class="assisted">
+                    <div class="featuring">
+                        <div class="circle"></div>
+                        <span>2X FASTER LEARNING</span>
+                    </div>
+                    <p class="heading">2x Faster Learning</p>
+                    <p class="heading-text">Reading is faster than watching: The average tutorial is spoken at 150 words per minute. You can read at 250. That’s why our courses are laid out as rich text and an interactive experience so you learn more, learn faster, and learn exactly what you need.</p>
+                    <div class="feadback">
+                        <div class="feadback-items">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span>Assessments: Measure Your Skill Score</span>
+                        </div>
+                        <div class="feadback-items">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <span>Personalized Paths</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative-content">
+                <div class="assisted">
+                    <div class="featuring">
+                        <div class="circle"></div>
+                        <span>INTERACTIVE</span>
+                    </div>
+                    <p class="heading">Hands-on Coding Environments</p>
+                    <p class="heading-text">You don’t get better at swimming by watching others. Coding is no different. Practice as you learn with live code environments inside your browser..</p>
+                    <div class="feadback">
+                        <div class="feadback-items">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span>Hands-on Projects: Build Real World Applications</span>
+                        </div>
+                        <div class="feadback-items">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <span>Run Live Applications In Your Browser</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: -80px;" class="image-assisted">
+                    <img src="image/handsOnCodingSection.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="structure">
+            <h1>Structured Skill Paths created by industry experts</h1>
+            <p>Learn from the pros. Get hands-on with in-demand and emerging technologies.</p>
+            <div class="skill">
+                <div class="skill-items">
+                    <a href="">
+                        <span>System Design</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>Front End Development</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>C++ Development</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>MERN Stack</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>Data Scientists</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>AWS Professional</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>Machine Learning</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skill-items">
+                    <a href="">
+                        <span>MEAN Stack</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="explore">
+                    <a href="">Explore Skill Paths</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="relative-content">
+                <div class="assisted">
+                    <div class="featuring">
+                        <div class="circle"></div>
+                        <span>DEVPATH</span>
+                    </div>
+                    <p class="heading">Train your Engineering Team with DevPath</p>
+                    <p class="heading-text">Leverage Educative courses and internal knowledge to onboard, upskill, and train your developers at scale with DevPath.</p>
+                    <div class="feadback">
+                        <div class="visit">
+                           <a href="">Visit DevPath</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: -80px;" class="image-assisted">
+                    <img src="image/DevPathFeatured.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="developpers">
+            <div class="developpers-first">
+                <span>Developers and teams learning with Educative</span>
+                <div class="developpers-learn">
+                    <h1>2.1+ Million</h1>
+                    <span>Learners</span>
+                </div>
+                <div class="developpers-learn">
+                    <h1>1,000+</h1>
+                    <span>Learning Resources</span>
+                </div>
+                <div class="developpers-learn">
+                    <h1>#1</h1>
+                    <span>in Interview Prep</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-first">
+                <a href="index.html"><img src="image/educative.png" alt=""></a>
+                <h5>Learn in-demand tech skills in half the time</h5>
+            </div>
+            <div class="horizontal-bar1"></div>
+            <div class="footer-second">
+                <div class="products">
+                    <h5>PRODUCTS</h5>
+                    <div class="products-items"> <a href="">Courses</a></div>
+                    <div class="products-items"> <a href="">Skill Paths</a></div>
+                    <div class="products-items"> <a href="">Projects</a></div>
+                    <div class="products-items"> <a href="">Assessments</a></div>
+                </div>
+                <div class="trending">
+                    <h5>TRENDING TOPICS</h5>
+                    <div class="products-items"><a href="">Learn to Code</a></div>
+                    <div class="products-items"><a href="">Tech Interview Prep</a></div>
+                    <div class="products-items"><a href="">Generative AI</a></div>
+                    <div class="products-items"><a href="">Data Science</a></div>
+                    <div class="products-items"><a href="">Machine Learning</a></div>
+                    <div class="products-items"><a href="">GitHub Students Scholarship</a></div>
+                    <div class="products-items"><a href="">Early Access Courses</a></div>
+                </div>
+                <div class="princing">
+                    <h5>PRICING</h5>
+                    <div class="products-items"><a href="">For Individuals</a></div>
+                    <div class="products-items"><a href="">Try for Free</a></div>
+                </div>
+                <div class="contribute">
+                    <h5>CONTRIBUTE</h5>
+                    <div class="products-items"><a href="">Become an Author</a></div>
+                    <div class="products-items"><a href="">Become an Affiliate</a></div>
+                    <div class="products-items"><a href="">Earn Referral Credits</a></div>
+                </div>
+                <div class="resources">
+                    <h5>RESOURCES</h5>
+                    <div class="products-items"><a href="">Blog</a></div>
+                    <div class="products-items"><a href="">Webinars</a></div>
+                    <div class="products-items"><a href="">Answers</a></div>
+                </div>
+                <div class="about">
+                    <h5>ABOUT US</h5>
+                    <div class="products-items"><a href="">Our Team</a></div>
+                    <div class="products-items"><a href="">Careers</a></div>
+                    <div class="products-items"><a href="">Frequently Asked Questions</a></div>
+                    <div class="products-items"><a href="">Contact Us</a></div>
+                    <div class="products-items"><a href="">Press</a></div>
+                </div>
+                <div class="legal">
+                    <h5>LEGAL</h5>
+                    <div class="products-items"><a href="">Privacy Policy</a></div>
+                    <div class="products-items"><a href="">Cookie Policy</a></div>
+                    <div class="products-items"><a href="">Terms of Service</a></div>
+                    <div class="products-items"><a href="">Business Terms of Service</a></div>
+                    <div class="products-items"><a href="">Data Processing Agreement</a></div>
+                </div>
+            </div>
+            <div class="horizontal-bar2"></div>
+
+            <div class="footer-third">
+                <div class="icons-container">
+                    <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-microphone" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="copy">
+                    <p>Copyright ©2024 Educative, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
     
     <script src="index.js"></script>

@@ -1,0 +1,683 @@
+*{
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.navbar {
+    position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #cacae9;
+      transition: 0.3s ease;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+  }
+    
+    
+    .navbar .h1 img {
+      display: flex;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      margin-left: 30px;
+    }
+    
+    .navbar .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-right: 900px;
+    }
+    
+    .navbar .menu ul li {
+      margin-right: 20px;
+      
+    }
+    
+    .navbar .menu ul li .menu-items{
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      margin-bottom: 20px;
+    }
+    
+    .navbar .menu ul li .menu-items:hover, 
+    .login .log:hover{
+      border-bottom: 2px solid black;
+    }
+  
+    .navbar .login a {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+  
+    .navbar .login .join{
+      border: 1px solid black;
+      color: white;
+      padding: 10px 10px 10px 10px;
+      cursor: pointer;
+      background-color: hsl(219, 73%, 44%);
+      margin-right: 30px;
+      font-weight: bold;
+    }
+  
+    .navbar .login{
+      padding-right: 1.5rem;
+    }
+  
+   .menu .dropdown .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-top: 20px;
+      
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+      gap: 40px;
+    }
+  
+  .dropdown-catalog {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #043677;
+  }
+  
+  .dropdown-catalog .catalog{
+    padding-bottom: 100px;
+  }
+  
+  .dropdown-catalog .catalog h1, .dropdown-catalog .tools h1{
+    font-size: 1rem;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dropdown-catalog .catalog p, .dropdown-catalog .tools p{
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-catalog .catalog .view{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: rgb(26, 69, 211);
+    margin-left: 60px;
+    text-align: center; 
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .dropdown-catalog .catalog .view:hover{
+    background-color: #ececf1;
+  }
+  
+  
+  .dropdown-menu .dropdown-items{
+    display: flex;
+    flex-direction: column;
+    column-gap: 80px;
+    width: 450px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .dropdown-items .language {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+  
+  .dropdown .dropdown-items .language li a{
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  .dropdown .dropdown-items .language li a:hover{
+    color: #4d6cc0;
+  }
+  
+  
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux éléments par ligne */
+    gap: 10px; /* Espacement entre les éléments */
+  }
+  
+  .courses-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none; /* Bordure autour de chaque élément */
+    padding-bottom: 10px;
+  }
+  
+  .courses-items:hover{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 80%;
+  }
+  
+  .courses-items p{
+    margin-left: 50px;
+    margin-top: -20px;
+    color: #a6a6ad;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  
+   .courses-items a:hover{
+    text-decoration: none;
+  }
+  
+  .courses-items h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  
+  .courses-items h3:hover{
+    color: #1762c4;
+  }
+  
+  .courses-items i {
+    border: none;
+    background-color: #cacae9;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.5rem;
+    color: #1762c4;
+    margin-top: 20px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+  }
+  
+  .modal-content {
+    display: flex;
+    gap: 30px;
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 850px;
+    
+  }
+  
+  .first, .second {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #header-title {
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: 2rem;
+  }
+  
+  .img-first {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .img-first img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .text-first .text-items{
+    margin-bottom: 10px;
+  }
+  
+  .text-first .text-items p i{
+    border-radius: 50%; 
+    background-color: blue; 
+    color: white; 
+    margin: 10px; 
+    padding: 2px;
+  
+  }
+  
+  .text-first .text-items p{
+    text-align: justify;
+  }
+  
+  .second .educative img{
+    width: 180px;
+    height: 100px;
+  }
+  
+  .second-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+  
+  .second-items {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+  }
+  
+  .second-items:hover{
+    background-color: #faf3f3;
+    border: 2px solid #a6a6ad;
+    transition-duration: 0.1s;
+  }
+  
+  .second-items a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .second-items span {
+    margin-top: 0;
+    margin: 10px;
+    font-weight: normal;
+  }
+  
+  .second .login-bar p {
+    text-align: center;
+    position: relative;
+    font-size: 0.9rem;
+  }
+  
+  .second .login-bar p::before,
+  .second .login-bar p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .second .login-bar p::before {
+    left: 100px;
+    transform: translate(-100%, -50%);
+  }
+  
+  .second .login-bar p::after {
+    right: 100px;
+    transform: translate(100%, -50%);
+  }
+  
+  #header-title {
+    display: block;
+  }
+  
+  #signup-title {
+    display: none;
+  }
+  
+  .login-form.active #header-title {
+    display: block;
+  }
+  
+  .signup-form.active #header-title {
+    display: none;
+  }
+  
+  #login-enterprise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  #login-enterprise .enterprise:hover{
+    color: #1762c4;
+  }
+  
+  a i {
+    margin-right: 10px;
+  }
+  
+  #login-protected{
+    text-align: center;
+    margin: 30px;
+    font-size: 0.9rem;
+  }
+  
+  #login-protected .terms{
+    color: #0a0a0a;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-right: -2px;
+  }
+  
+  #login-protected .terms:hover{
+    color: #1762c4;
+  }
+  
+  .login-protected{
+    color: #cacae9;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .signup-form .login-protected .privacy{
+    color: #cacae9;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-right: -2px;
+  }
+  
+  .signup-form .login-protected .privacy:hover{
+    color: #1762c4; 
+  }
+  
+  .login-form,
+  .signup-form {
+    display: none;
+  }
+  
+  .login-form.active,
+  .signup-form.active {
+    display: block;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .toggle-password:before {
+    content: "\f070";
+    font-family: "FontAwesome";
+  }
+  
+  .toggle-password.active:before {
+    content: "\f06e";
+  }
+  
+  .toggle-password.active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 2px;
+    height: 20px;
+    background-color: #817d7d;
+  }
+  
+  .form-group i{
+    color: #817d7d;
+  }
+  
+  .form-group i:hover{
+    background-color: #e6e3e3;
+    padding: 10px;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="email"] {
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #dbdfe2;
+  }
+  
+  .form-group input[type="text"]:hover,
+  .form-group input[type="password"]:hover,
+  .form-group input[type="email"]:hover{
+    background-color: #ecebeb;
+    transition-duration: 0.1s;
+  }
+  
+  .form-group input[type="email"]:focus{
+    border: 2px solid blue;
+  }
+  
+  .form-group button {
+    background-color: #4d6cc0;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    width: 101%;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group button:hover{
+    transition-duration: 1s;
+    background-color: #1762c4;
+  }
+  
+  .signup-form p,
+  .login-form.active p{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .signup-form.active p a,
+  .login-form.active p a{
+    color: #1762c4;
+  }
+  
+  .signup-form.active p a:hover,
+  .login-form.active p .account:hover{
+    color: #0a0a0a;
+    border: none;
+    background-color: #ece8e8;
+    padding: 10px;
+  }
+  
+  .login-form.active .forgot{
+    text-align: right;
+  }
+  
+  .login-form.active .forgot a{
+    color: #1762c4;
+  }
+  
+  .login-form.active .forgot a:hover{
+    color: #0a0a0a;
+    transition-duration: 0.1s;
+    border: none;
+    background-color: #ece8e8;
+  }
+  
+  .close {
+    color: #0a0a0a;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    background-color: #ece8e8;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .horizontal-bar {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .modal-enterprise {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-enterprise.active{
+    display: block;
+  }
+  
+  .modal-content-enterprise {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+  }
+  
+  .modal-header-enterprise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header-enterprise h2 {
+    margin: 0;
+  }
+  
+  .close {
+    cursor: pointer;
+  }
+  
+  .modal-body-enterprise {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .next-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .back-link i {
+    margin-right: 5px;
+  }
+
+  .vertical-menu {
+    list-style-type: none;
+    margin: -10px;
+    padding: 0;
+    margin-top: 70px;
+    height: 1000px;
+    width: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(206, 201, 201);
+  }
+  
+  .vertical-menu a {
+    display: block;
+    color: black;
+    padding: 16px 24px;
+    text-decoration: none;
+  }
+
+
+.vertical-menu a.active {
+  background-color: #0d0e0d; /* Couleur de fond pour les éléments actifs */
+  color: white;
+}
+  
+  .vertical-menu a:hover {
+    background-color: rgb(206, 201, 201);
+    color: white;
+  }
+  
+  .vertical-menu a i {
+    display: block;
+    text-align: center;
+  }
+  
+  .vertical-menu a span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: -10px;
+  }
+  
