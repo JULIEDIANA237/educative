@@ -456,22 +456,29 @@ body{
   margin: -10px;
 }
 
-/*.img .image-caption {
+.img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img .image-caption {
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.js:hover .image-caption {
+.js:hover .image-caption, 
+.python:hover .image-caption ,
+.kub:hover .image-caption,
+.cplus:hover .image-caption,
+.csharp:hover .image-caption,
+.aws:hover .image-caption,
+.react:hover .image-caption{
   opacity: 1;
 }
 
 .img .show-caption .image-caption {
   opacity: 1;
-}
-
-.js{
-  position: relative;
 }
 
 .img img {
@@ -480,7 +487,7 @@ body{
 
 .img img:hover {
   transform: scale(1.1);
-}*/
+}
 
 
 .popular h1{
@@ -499,16 +506,18 @@ body{
   gap: 30px;  
 }
 
-/*.js img{
+.js img{
   border: none;
   padding: 15px;
   border-radius: 50%;
   background-color: #f1da0ac5;
+  width: 70px;
+  height: 70px;
 }
 
 .kub img{
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 15px;
   border-radius: 50%;
@@ -516,8 +525,8 @@ body{
 }
 
 .python img{
-   width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 15px;
   border-radius: 50%;
@@ -525,8 +534,8 @@ body{
 }
 
 .cplus img{
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 15px;
   border-radius: 50%;
@@ -534,6 +543,8 @@ body{
 }
 
 .csharp img{
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 18px;
   border-radius: 50%;
@@ -541,8 +552,8 @@ body{
 }
 
 .react img{
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 15px;
   border-radius: 50%;
@@ -551,13 +562,13 @@ body{
 
 
 .aws img{
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   border: none;
   padding: 15px;
   border-radius: 50%;
   background-color: #110f1d;
-}*/
+}
 
 .modal {
   display: none;
@@ -1102,11 +1113,80 @@ input[type="email"] {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: 250px;
+  padding-bottom: 40px;
 }
 
-.developpers-first span{
+.developpers-first h4{
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  width: 18%;
+}
+
+.developpers-learn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.developpers-learn h1{
+  color: blueviolet;
+  font-size: 3rem;
+}
+
+.developpers-learn span{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -10px;
+  color: gray;
+}
+
+.developpers-third{
+  display: flex;
+  gap: 150px;
+  width: 68%;
+  margin-left: 250px;
+  padding: 110px;
+  border-radius: 20px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.developpers-third h1{
+  color: #303b3b;
+}
+
+.developpers-third .getaccess{
+  display: flex;
+  flex-direction: column;
+  gap: 20px 20px;
+  margin: -50px;
+}
+
+.developpers-third a{
+  text-decoration: none;
+  border: none;
+  background-color: #5553ff;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  width: 30%;
+}
+
+.developpers-third a:hover{
+  background-color: #675bcf;
+}
+
+.developpers-first,
+.developpers-third{
+  flex: 1;
+}
+
+.develop-second{
+  background-color: #817d7d;
+  height: 200%;
 }
 
 .structure{
