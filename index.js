@@ -154,3 +154,26 @@ loginEnterpriseLink.addEventListener('click', showEnterpriseModal);
 closeButton.addEventListener('click', showLoginModal);
 backLink.addEventListener('click', showLoginModal);
 
+const teamSlider = document.querySelector('.team-slider');
+const teamCards = document.querySelectorAll('.team-card');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+prevBtn.addEventListener('click', () => {
+  teamSlider.scrollBy({
+    left: -300,
+    behavior: 'smooth'
+  });
+});
+
+nextBtn.addEventListener('click', () => {
+  teamSlider.scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+});
+
+teamSlider.addEventListener('scroll', () => {
+  prevBtn.disabled = teamSlider.scrollLeft === 0;
+  nextBtn.disabled = teamSlider.scrollLeft + teamSlider.clientWidth >= teamSlider.scrollWidth;
+});

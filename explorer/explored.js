@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var navbarContainer = document.getElementById('navbar');
     var footerContainer = document.getElementById('footer');
     
+
     fetch('header.html')
       .then(function(response) {
         return response.text();
@@ -11,8 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
       })
       .catch(function(error) {
         console.log('Une erreur s\'est produite lors du chargement de la navbar :', error);
-      });
-      
+      });  
     fetch('footer.html')
       .then(function(response) {
         return response.text();
@@ -130,33 +130,4 @@ window.addEventListener('DOMContentLoaded', function() {
   backLink.addEventListener('click', showLoginModal);
   
 
-  //slider card
-  /*var swiper = new Swiper(".slide-containe", {
-    slidesPerView: 1,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-  });*/
+ 
